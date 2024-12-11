@@ -1,5 +1,4 @@
 import { Request, Response } from 'express';
-import knex from 'knex';
 import { EtNews} from '../models/etNewsModel';
 
 // Kiểm tra ngày hợp lệ
