@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "rootDir": ".",                      // Sử dụng thư mục hiện tại làm root
+    "outDir": "../dist",                 // File biên dịch sẽ nằm trong thư mục ../dist
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["**/*"],                   // Bao gồm toàn bộ file trong src
+  "exclude": ["../node_modules", "../dist"] // Loại trừ thư mục node_modules và dist
 }
